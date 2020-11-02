@@ -4025,7 +4025,7 @@ public class AppD extends App implements KeyEventDispatcher, AppDI {
 					if (msg == null) {
 						return;
 					}
-					Log.printStacktrace("" + msg);
+					Log.trace("" + msg);
 
 					// make sure splash screen not showing (will be in front)
 					GeoGebra.hideSplash();
