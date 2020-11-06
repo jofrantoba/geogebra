@@ -4139,12 +4139,20 @@ public class Kernel implements SpecialPointsListener, ConstructionStepper {
 		}
 	}
 
+	/**
+	 * @param geo
+	 *            animated geo
+	 */
 	public void notifyStartAnimation(GeoElement geo) {
 		if (notifyViewsActive) {
 			app.getEventDispatcher().startAnimation(geo);
 		}
 	}
 
+	/**
+	 * @param geo
+	 *            animated geo
+	 */
 	public void notifyStopAnimation(GeoElement geo) {
 		if (notifyViewsActive) {
 			app.getEventDispatcher().stopAnimation(geo);
